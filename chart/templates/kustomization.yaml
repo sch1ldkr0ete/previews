@@ -15,3 +15,6 @@ spec:
   validation: client
   decryption:
     provider: sops
+  postBuild:
+    substitute:
+      namespace: {{ .Values.pr }}
